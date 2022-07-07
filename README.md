@@ -41,7 +41,7 @@ The exact categories of testing you will come across vary and include additional
 types not described here, but based on the categories we have here, the
 hierarchy of tests can be visualized like this:
 
-![testing-pyramid.jpeg](testing-pyramid.jpeg)
+![testing-pyramid.jpeg](https://curriculum-content.s3.amazonaws.com/java-mod-3/testing-pyramid.jpeg)
 
 While not all types of testing will be created or maintained by developers, it's
 important that we understand the basic principles of the testing pyramid because
