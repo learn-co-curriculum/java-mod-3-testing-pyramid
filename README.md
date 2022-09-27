@@ -46,7 +46,7 @@ questions:
 - How many tests are needed?
 - How frequently should we run these tests?
 
-The testing pyramid looks at the four types of tests we identified above to 
+The testing pyramid looks at the four types of tests we identified above to
 answer these questions:
 
 ![testing-pyramid.jpeg](https://curriculum-content.s3.amazonaws.com/java-mod-3/testing-pyramid.jpeg)
