@@ -2,44 +2,52 @@
 
 ## Learning Goals
 
-- Describe the testing pyramid
+- Review and understand different types of testing.
+- Describe the testing pyramid.
+
+## Review Types of Testing
+
+Let's review some different types of testing:
+
+### Unit Testing
+
+We have covered unit testing pretty well in this module. But as a review, unit
+testing is a specific kind of testing that focuses on validating the
+functionality of a single component of the system. It tests a small, specific
+piece of functionality.
+
+### Integration Testing
+
+**Integration testing** is a type of testing that looks at multiple components of
+a program and tests how well these modules may work together. The components
+that are involved in integration testing are usually unit tested already with a
+goal to see if any issues are exposed when they are integrated together.
+
+### User Interface (UI) Testing
+
+**User Interface (UI) testing** consists of testing the interface that users
+interact with. UI tests need to cover the components of the system that are
+responsible for presenting the information to actual end users and getting
+information from those users. For example, testing the functionality and
+features on a website. This could include looking at menus, images, and links.
+
+### Manual Testing
+
+Manual testing is the process of testing the system manually. An example of this
+type of testing is when we would use print statements to verify if our code was
+working properly.
 
 ## Testing Pyramid
 
-In the previous section, we touched on a very important concept that is worth
-revisiting now, so we can underline its importance and also put it in the
-context of the "testing pyramid".
+A **testing pyramid** is a metaphor that can help developers and other types of
+testers understand how to test. By that, we mean to answer the following
+questions:
 
-> Once a specific piece of code and/or functionality is covered by one test, it
-> does not need to be covered by another test.
+- How many tests are needed?
+- How frequently should we run these tests?
 
-We saw this in the previous section when we decided to extend the ability to
-"FizzBuzz" one string to be able to "FizzBuzz" an array of strings. All we
-needed to do was test the ability to properly pass each item in the array to the
-existing `fizzBuzz()` method. Once we could do that properly, we felt confident
-that method would do its job properly because we already had unit tests covering
-that functionality.
-
-Building on that observation, it follows pretty naturally that the "higher
-level" the testing is, the less "detailed" scenarios it needs to cover.
-"Detailed" is in quotes here because it's being used in a specific context to
-mean "number and variety" of scenarios being covered:
-
-1. Unit tests should cover all possible scenarios that our code is expected to
-   handle
-2. Functional and integration tests need to cover the expected behavior of the
-   system (which may be comprised of more than one component) from a user's
-   perspective. Note that in this case, the "user" may be an actual person or
-   another component, set of components or entire system.
-3. UI tests need to cover the components of the system that are responsible for
-   presenting the information to actual end users (people) and getting
-   information from those users.
-4. Manual tests are tests that cannot be automated, usually because they require
-   access to multiple systems or manual validation of results.
-
-The exact categories of testing you will come across vary and include additional
-types not described here, but based on the categories we have here, the
-hierarchy of tests can be visualized like this:
+The testing pyramid looks at the four types of tests we identified above to
+answer these questions:
 
 ![testing-pyramid.jpeg](https://curriculum-content.s3.amazonaws.com/java-mod-3/testing-pyramid.jpeg)
 
